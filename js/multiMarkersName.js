@@ -30,7 +30,13 @@ AFRAME.registerComponent('markers_start',{
 			sceneEl.appendChild(markerEl);
 
 			//Adding text to each marker
-			document.write('<a-entity id="bowser-model" scale="0.0018968007377193397 0.0018968007377193397 0.0018968007377193397" animation-mixer="loop: repeat" gltf-model="resources/markers/ac.gltf" class="clickable" gesture-handler ></a-entity>');
+			var enti = document.querySelector('a-entity');
+		
+			enti.setAttribute('id','bowser-model');
+			enti.setAttribute('gltf-model',"resources/markers/ac.gltf");
+			enti.setAttribute('scale','0.0018968007377193397 0.0018968007377193397 0.0018968007377193397');
+			enti.setAttribute('position', { x: 0, y: 0.7, z: 3 });
+			enti.appendChild(textEl);
 		}
 	}
 });
