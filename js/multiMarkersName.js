@@ -31,10 +31,10 @@ AFRAME.registerComponent('markers_start',{
 
 			//Adding text to each marker
 			var textEl = document.createElement('a-entity');
-			
+			var a=k+1
 			textEl.setAttribute('id','bowser-model');
 			textEl.setAttribute('scale','0.0018968007377193397 0.0018968007377193397 0.0018968007377193397');
-			textEl.setAttribute('gltf-model','resources/markers/ac.gltf');
+			textEl.setAttribute('gltf-model','resources/markers/'+a+'.gltf');
 
 			markerEl.appendChild(textEl);
 		}
