@@ -34,7 +34,7 @@ AFRAME.registerComponent('markers_start',{
 			var a=k+1
 			textEl.setAttribute('id','bowser-model');
 			textEl.setAttribute('scale','0.0018968007377193397 0.0018968007377193397 0.0018968007377193397');
-			textEl.setAttribute('gltf-model','resources/markers/'+a+'.gltf');
+			textEl.setAttribute('gltf-model','resources/markers/1.gltf');
 
 			markerEl.appendChild(textEl);
 		}
