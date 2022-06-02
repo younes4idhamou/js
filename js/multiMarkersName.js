@@ -32,7 +32,7 @@ AFRAME.registerComponent('markers_start',{
 		  
 		  textEl.setAttribute('id','text');
 		  textEl.setAttribute('gltf-model','resources/target/'+(k+1)+'.gltf');
-		  textEl.object3D.position.set(0, 0.7, 1);
+		  textEl.object3D.position.set(0, 3, 0);
 		  textEl.object3D.rotation.set(-90, 0, 0);
 		  markerEl.appendChild(textEl);
 		}
