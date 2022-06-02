@@ -31,9 +31,7 @@ AFRAME.registerComponent('markers_start',{
 		  var textEl = document.createElement('a-entity');
 		  
 		  textEl.setAttribute('id','text');
-		  textEl.setAttribute('gltf-model','resources/target/cocaine.pdb');
-		  textEl.object3D.rotation.set(-90, 0, 0);
-		  textEl.object3D.position.set(50,150,0);
+		  textEl.setAttribute('gltf-model','resources/target/'+(k+1)+'.gltf');
 
 		  markerEl.appendChild(textEl);
 		  
