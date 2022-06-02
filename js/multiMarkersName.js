@@ -21,22 +21,20 @@ AFRAME.registerComponent('markers_start',{
 
 		for(var k=0; k<3; k++)
 		{
-			var markerEl = document.createElement('a-marker');
-			markerEl.setAttribute('type','pattern');
-			markerEl.setAttribute('url',markersURLArray[k]);
-			markerEl.setAttribute('id',markersNameArray[k]);
-
-			markerEl.setAttribute('registerevents','');
-			sceneEl.appendChild(markerEl);
-
-			//Adding text to each marker
-			var textEl = document.createElement('a-entity');
-			var a=k+1
-			textEl.setAttribute('id','bowser-model');
-			textEl.setAttribute('scale','0.0018968007377193397 0.0018968007377193397 0.0018968007377193397');
-			textEl.setAttribute('gltf-model','resources/markers/ac.gltf');
-
-			markerEl.appendChild(textEl);
+		  var markerEl = document.createElement('a-marker');
+		  markerEl.setAttribute('type','pattern');
+		  markerEl.setAttribute('url',markersURLArray[k]);
+		  markerEl.setAttribute('id',markersNameArray[k]);
+		  markerEl.setAttribute('registerevents','');
+		  sceneEl.appendChild(markerEl);
+		  //Adding a text to each marker
+		  var textEl = document.createElement('a-entity');
+		  
+		  textEl.setAttribute('id','text');
+		  textEl.setAttribute('gltf-model','resources/markers/ac.glb');
+		  textEl.object3D.position.set(0, 0.7, 0);
+		  textEl.object3D.rotation.set(-90, 0, 0);
+		  markerEl.appendChild(textEl);
 		}
 	}
 });
