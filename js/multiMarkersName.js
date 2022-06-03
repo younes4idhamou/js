@@ -1,6 +1,3 @@
-//Multi Markers WebAR-AR.js and Aframe - Playing the Archive - Connected Environment CASA-UCL
-
-//Global Variable
 var markersURLArray=[];
 var markersNameArray=[];
 
@@ -27,12 +24,12 @@ AFRAME.registerComponent('markers_start',{
 		  markerEl.setAttribute('id',markersNameArray[k]);
 		  markerEl.setAttribute('registerevents','');
 		  sceneEl.appendChild(markerEl);
-		  //Adding a text to each marker
+		  //Adding an object to each marker
 		  var textEl = document.createElement('a-entity');
 		  
 		  textEl.setAttribute('id','text');
 		  textEl.setAttribute('gltf-model','resources/markers/ac.gltf');
-		  textEl.object3D.position.set(4, 4, 4);
+		  textEl.object3D.position.set(10,10,10);
 		  textEl.object3D.scale.set(0.0018968007377193397,0.0018968007377193397,0.0018968007377193397);
 		  markerEl.appendChild(textEl);
 		}
