@@ -29,7 +29,7 @@ AFRAME.registerComponent('markers_start',{
 		  
 		  textEl.setAttribute('id','text');
 		  textEl.setAttribute('gltf-model','resources/markers/ac.gltf');
-		  textEl.object3D.scale.set(0.5,0.5,0.5);
+		  textEl.object3D.scale.set(0.4,0.4,0.4);
 		  markerEl.appendChild(textEl);
 		}
 	}
