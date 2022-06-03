@@ -29,8 +29,8 @@ AFRAME.registerComponent('markers_start',{
 		  
 		  textEl.setAttribute('id','text');
 		  textEl.setAttribute('gltf-model','resources/markers/ac.gltf');
-		  textEl.object3D.position.set(10,10,10);
-		  textEl.object3D.scale.set(0.0018968007377193397,0.0018968007377193397,0.0018968007377193397);
+		  textEl.object3D.position.set(1,0,1);
+		  textEl.setAttribute('scale','0.0018968007377193397 0.0018968007377193397 0.0018968007377193397');
 		  markerEl.appendChild(textEl);
 		}
 	}
